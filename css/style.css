@@ -22,7 +22,7 @@ body {
 }
 
 form {
-  border-left: solid orange 2px;
+  border-left: solid gold 2px;
   padding-left: 2rem;
   }
 
@@ -49,7 +49,7 @@ input[type="radio"] {
 
 button {
   border-radius: 4px;
-  background-color: orange;
+  background-color: gold;
 }
 
 .check_boxes {
@@ -101,6 +101,6 @@ ul li {
 }
 
 i {
-  color: orange;
+  color: gold;
   text-shadow: black 1px 1px;
 }

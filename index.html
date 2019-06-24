@@ -4,10 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./favicon.ico" type="image/x-icon" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0274ad49ed.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <script src="https://kit.fontawesome.com/0274ad49ed.js"></script>
@@ -17,34 +15,39 @@
   <body>
     <div class="box">
       <h1>Check that out:</h1>
-      <div class="check_boxes">
-        <div class="check_item">
+      <div class="action">
+        <div class="check_boxes">
           <input
             type="checkbox"
             id="vegan"
             name="vegan"
             class="vegan_checker"
-          />
-          <label for="vegan"> For Vegan</label>
-        </div>
-        <div class="check_item">
+          >For Vegan</input>
           <input
             type="checkbox"
             id="carnivore"
             name="carnivore"
             class="carnivore_checker"
-          />
-          <label for="carnivore"> For Carnivore</label>
-        </div>
+          />For Carnivore</input>
+      </div>
+        <form>
+          <label for="new">Or set a new beverage:</label>
+          <input type="text" id="new" />
+          <div class="radios">
+            <input type="radio" id="new_vegan" value="vegan" name="choice">vegan</input>
+            <input type="radio" id="new_carnivore" value="carnivore" name="choice"/>carnivore</input>
+          </div>
+          <button type="submit">Add</button>
+        </form>
       </div>
 
       <ul>
-        <li class="vegan">Coffee</li>
-        <li class="vegan">Tea</li>
-        <li class="carnivore">Milk</li>
-        <li class="vegan">Water</li>
-        <li class="carnivore">Cappuccino</li>
-        <li class="vegan">Soy drink</li>
+        <li class="vegan">Black Coffee <i class="fas fa-minus-square"></i></li>
+        <li class="vegan">Tea <i class="fas fa-minus-square"></i></li>
+        <li class="carnivore">Milk <i class="fas fa-minus-square"></i></li>
+        <li class="vegan">Water <i class="fas fa-minus-square"></i></li>
+        <li class="carnivore">Cappuccino <i class="fas fa-minus-square"></i></li>
+        <li class="vegan">Soy drink <i class="fas fa-minus-square"></i></li>
       </ul>
     </div>
 
